@@ -520,7 +520,7 @@ img{
     height: 900px;
     max-height: 2000px;
     width: 70%;
-    min-width: 520px;
+    min-width: 400px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -559,8 +559,9 @@ img{
   }
   .form_textarea{
     width: 100%;
+    min-width: none;
     margin-top: 10px;
-    height: 200px;
+    height: 163px;
     resize: none;
     font-style: normal;
     font-size: 40px;
@@ -683,6 +684,9 @@ img{
 }
 
 @media screen and (max-width: 767px) {
+    .form{
+        height: 1050px;
+    }
     .section-title {
         margin-bottom: 25px;
     }
@@ -778,9 +782,12 @@ img{
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .header__nav {
         padding: 75px 30px;
+    }
+    .form{
+        height: 1100px;
     }
 }
 
